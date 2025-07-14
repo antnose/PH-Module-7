@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Task Two</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+        min-height: 250px;
+      }
+      .common {
+        border: 1px solid black;
+      }
+
+      .container_div {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .last_div_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      @media screen and (max-width: 576px) {
+        .main {
+          grid-template-columns: 1fr;
+        }
+        .last_div_container {
+          grid-template-columns: 1fr;
+        }
+        .common {
+          height: 85px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="one common">One</div>
+      <div class="container_div">
+        <div class="two common">Two</div>
+        <div class="last_div_container">
+          <div class="three common">Three</div>
+          <div class="four common">Four</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

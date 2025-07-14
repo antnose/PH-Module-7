@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice One</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1248px;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+      div {
+        height: 200px;
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and (max-width: 576px) {
+        main {
+          grid-template-columns: 1fr;
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>Left</div>
+      <div>Right</div>
+    </main>
+  </body>
+</html>
